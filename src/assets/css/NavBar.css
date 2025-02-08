@@ -1,0 +1,118 @@
+/* General styles for the header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: wait;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(243, 245, 246);
+    border-radius: 40px;
+    font-size: 13px;
+    color: #0a0a0a;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 30px #0ef;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .navbar.active {
+        display: flex; 
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 25%; 
+        text-align: center;
+        padding: 15px 0;
+        background: transparent;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        background: #0ef;
+        color: #081b29;
+    }
+    .menu-toggle {
+        display: block; 
+    }
+}

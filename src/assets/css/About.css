@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #081b29;
+    color: #ffffff;
+}
+
+.about {
+    padding: 60px 10%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+.about.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.image-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color:  #081b29; /* Fallback background */
+}
+
+.slider-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the whole image fits inside without cropping */
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 2s ease-in-out, transform 1s ease-in-out;
+}
+
+.slider-image.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+    opacity: 0;
+    animation: slideUp 1.2s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.about-line {
+    font-size: 1.2rem;
+    color: #dddddd;
+    line-height: 1.8;
+}
+
+
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.experience {
+    margin-top: 40px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+.experience h3 {
+    color: #00aaff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-item:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}
+
+.experience-item h4 {
+    color: #00ffcc;
+    font-size: 1.5rem;
+}
+
+.experience-item p {
+    font-size: 1.1rem;
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.hobbies {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.3);
+}
+
+.hobbies h3 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies li {
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: rgba(0, 170, 255, 0.2);
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.hobbies li:hover {
+    transform: scale(1.1);
+    background: rgba(0, 170, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 50px 7%;
+    }
+    .about h2 {
+        font-size: 2rem;
+    }
+    .about-line {
+        font-size: 1.1rem;
+    }
+    
+    .experience-item h4 {
+        font-size: 1.4rem;
+    }
+    .experience-item p {
+        font-size: 1rem;
+    }
+    .hobbies li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 5%;
+    }
+    .about h2 {
+        font-size: 1.8rem;
+    }
+    .about-line {
+        font-size: 1rem;
+    }
+    .image img {
+        max-width: 300px;
+        width: 90%;
+    }
+    .experience h3, .hobbies h3 {
+        font-size: 1.8rem;
+    }
+    .experience-item h4 {
+        font-size: 1.3rem;
+    }
+    .experience-item p {
+        font-size: 1rem;
+    }
+    .hobbies li {
+        font-size: 1rem;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 30px 4%;
+    }
+    .about h2 {
+        font-size: 1.6rem;
+    }
+    .about-line {
+        font-size: 0.95rem;
+    }
+    .image img {
+        max-width: 250px;
+    }
+    .experience h3, .hobbies h3 {
+        font-size: 1.6rem;
+    }
+    .experience-item h4 {
+        font-size: 1.2rem;
+    }
+    .experience-item p {
+        font-size: 0.95rem;
+    }
+    .hobbies li {
+        font-size: 0.95rem;
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,258 @@
+.home {
+    min-height: 100vh;
+    padding: 70px 10% 0;
+    display: flex;
+    align-items: center;
+}
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 30px 10px #0f0f10, 
+                0 0 60px 20px #0d0d0d, 
+                0 0 100px 30px #1e90ff;
+                border: .2rem solid var(--primary-color);
+                animation: floatImage 3s ease-in-out infinite;
+}
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.profile-text h3{
+    
+    opacity: 0;
+    animation:  slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.profile-text {
+    font-size: 28px;
+    flex: 1;
+    min-width: 300px;
+}
+.text{
+    color: #0ef;
+}
+.profile-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 10px 0;
+    opacity: 0;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.profile-text p{
+    font-size: 20px;
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.home-sci {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideBottom 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.5s;
+    transition: .5s ease;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px rgb(15, 239, 239);
+}
+
+@media (max-width: 1024px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-text {
+        font-size: 24px;
+    }
+
+    .profile-text h1 {
+        font-size: 48px;
+    }
+
+    .profile-text p {
+        font-size: 18px;
+    }
+
+    .home-sci {
+        justify-content: center;
+    }
+
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-box {
+        font-size: 14px;
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 50px 5% 0;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    .profile-text h1 {
+        font-size: 36px;
+    }
+
+    .profile-text p {
+        font-size: 16px;
+    }
+
+    .home-sci {
+        gap: 15px;
+    }
+
+    .home-sci a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .btn-box {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .text {
+        font-size: 20px; /* Corrected */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+
+    .profile-text h1 {
+        font-size: 28px;
+    }
+
+    .profile-text p {
+        font-size: 14px;
+    }
+
+    .home-sci {
+        gap: 9px;
+    }
+
+    .home-sci a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .btn-box {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+    .text {
+        font-size: 12px; /* Corrected */
+    }
+}

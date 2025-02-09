@@ -4,21 +4,12 @@ import "../css/NavBar.css";
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [cvLink, setCvLink] = useState(""); // Store CV link
-    const navbarRef = useRef(null); 
-    const menuToggleRef = useRef(null); 
+    const navbarRef = useRef(null);
+    const menuToggleRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
-
-    useEffect(() => {
-        // Fetch CV link from data.json
-        fetch("/api/data.json")
-            .then(response => response.json())
-            .then(data => setCvLink(data.cvLink))
-            .catch(error => console.error("Error fetching CV link:", error));
-    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -28,7 +19,7 @@ const NavBar = () => {
                 menuToggleRef.current &&
                 !menuToggleRef.current.contains(event.target)
             ) {
-                setIsOpen(false); 
+                setIsOpen(false);
             }
         };
 
@@ -47,20 +38,24 @@ const NavBar = () => {
                 Portfolio
             </Link>
 
-            <div className="menu-toggle" onClick={toggleMenu} ref={menuToggleRef} aria-expanded={isOpen}>
+            <div 
+                className="menu-toggle" 
+                onClick={toggleMenu} 
+                ref={menuToggleRef} 
+                aria-expanded={isOpen}
+                aria-controls="navbar"
+            >
                 &#9776;
             </div>
 
-            <nav className={`navbar ${isOpen ? "active" : ""}`} ref={navbarRef}>
+            <nav className={`navbar ${isOpen ? "active" : ""}`} ref={navbarRef} id="navbar">
                 <Link to="/" style={{ '--i': 1 }} onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" style={{ '--i': 2 }} onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/skills" style={{ '--i': 3 }} onClick={() => setIsOpen(false)}>Skills</Link>
                 <Link to="/contact" style={{ '--i': 4 }} onClick={() => setIsOpen(false)}>Contact</Link>
-                {cvLink && (
-                    <a href={cvLink} download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
-                        Download CV
-                    </a>
-                )}
+                <a href="/api/Milan_Cv(1).pdf" download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
+                    Download CV
+                </a>
             </nav>
         </header>
     );

@@ -53,10 +53,9 @@ const NavBar = () => {
                 <Link to="/about" style={{ '--i': 2 }} onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/skills" style={{ '--i': 3 }} onClick={() => setIsOpen(false)}>Skills</Link>
                 <Link to="/contact" style={{ '--i': 4 }} onClick={() => setIsOpen(false)}>Contact</Link>
-                <a href={../../../public/api/Milan_Cv(1).pdf} download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
-    Download CV
-</a>
-
+                <a href="/api/Milan_Cv(1).pdf" download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
+                    Download CV
+                </a>
             </nav>
         </header>
     );

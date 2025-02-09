@@ -32,28 +32,25 @@ const NavBar = () => {
         };
     }, []);
 
+   
+    const cvLink = "../images/CV.pdf";
+
     return (
         <header className="header">
             <Link to="/" className="logo" style={{ cursor: 'pointer' }}>
                 Portfolio
             </Link>
 
-            <div 
-                className="menu-toggle" 
-                onClick={toggleMenu} 
-                ref={menuToggleRef} 
-                aria-expanded={isOpen}
-                aria-controls="navbar"
-            >
+            <div className="menu-toggle" onClick={toggleMenu} ref={menuToggleRef} aria-expanded={isOpen}>
                 &#9776;
             </div>
 
-            <nav className={`navbar ${isOpen ? "active" : ""}`} ref={navbarRef} id="navbar">
+            <nav className={`navbar ${isOpen ? "active" : ""}`} ref={navbarRef}>
                 <Link to="/" style={{ '--i': 1 }} onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" style={{ '--i': 2 }} onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/skills" style={{ '--i': 3 }} onClick={() => setIsOpen(false)}>Skills</Link>
                 <Link to="/contact" style={{ '--i': 4 }} onClick={() => setIsOpen(false)}>Contact</Link>
-                <a href="/Milan_Cv.pdf" download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
+                <a href={cvLink} download style={{ '--i': 5 }} onClick={() => setIsOpen(false)}>
                     Download CV
                 </a>
             </nav>

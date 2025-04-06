@@ -1,0 +1,15 @@
+{
+    "title": "Skills & Expertise",
+    "skills": [
+        { "name": "HTML", "percentage": 95 },
+        { "name": "CSS", "percentage": 90 },
+        { "name": "JavaScript", "percentage": 70 },
+        { "name": "React.js", "percentage": 60 },
+        { "name": "Node.js", "percentage": 20 },
+        { "name": "Python", "percentage": 75 },
+        { "name": "Flask", "percentage": 50 },
+        { "name": "C++", "percentage": 92 },
+        { "name": "SQL", "percentage": 25 },
+        { "name": "MongoDB", "percentage": 0 }
+    ]
+}

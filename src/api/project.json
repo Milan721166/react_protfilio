@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Currency Converter",
+      "description": "A dynamic web app that converts currencies in real-time using an API.",
+      "tech": ["HTML", "CSS", "JavaScript", "API"],
+      "link": "https://currency-conveter-wine.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Login Tolet-Globle",
+      "description": "Responsive Login page for Tolet-Globe, a real estate platform.",
+      "tech": ["React", "Bootstreap", "CSS", "API", "git"],
+      "link": "https://to-let-globe-xi.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website showcasing my projects and skills.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "link": "https://milanprotfiolio.vercel.app/"
+    },
+    {
+        "id": 4,
+        "title": "Shopping Homepage",
+        "description": "A Shopping homepage with a modern design and user-friendly interface.",
+        "tech": ["React", "CSS", "JavaScript","API","Bootstreap"],
+        "link": "https://shopping-web-gules-five.vercel.app/"
+      },
+      {
+          "id": 5,
+          "title": "X & 0 Game",
+          "description": "A X & 0 game with a simple and interactive design.",
+          "tech": ["HTML", "CSS", "JavaScript","API"],
+          "link": "https://voice-assitance.vercel.app/"
+        }
+  ]
+  

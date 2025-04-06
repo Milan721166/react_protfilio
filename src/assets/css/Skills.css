@@ -1,140 +1,133 @@
+/* ===== SKILLS SECTION ===== */
 .skills-container {
     text-align: center;
-    padding: 50px;
+    padding: 2rem;
     background: linear-gradient(to bottom, #081b29, #043755);
     color: white;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     max-width: 1000px;
-    margin: 50px auto;
-}
-
-.skills-title {
+    margin: 2rem auto;
+  }
+  
+  .skills-title {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     font-weight: bold;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-}
-
-/* Skill Card */
-.skill-item {
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  /* Skill Card */
+  .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 0.75rem;
     background: white;
     color: #2a2a72;
-    padding: 15px;
+    padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    width: 150px;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Hover Effect */
-.skill-item:hover {
-    transform: scale(1.1);
-}
-
-/* Circular Progress Container */
-.circular-progress {
-    width: 120px;
-    height: 120px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Circular Progress */
+  .circular-progress {
+    width: 100px;
+    height: 100px;
     position: relative;
-}
-
-svg {
+  }
+  
+  svg {
     width: 100%;
     height: 100%;
-}
-
-.bg-circle {
+  }
+  
+  .bg-circle {
     fill: none;
     stroke: #e0e0e0;
     stroke-width: 8;
-}
-
-.progress-circle {
+  }
+  
+  .progress-circle {
     fill: none;
     stroke: #009ffd;
     stroke-width: 8;
     stroke-linecap: round;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
-}
-
-.percentage-text {
-    font-size: 18px;
+  }
+  
+  .percentage-text {
+    font-size: 1rem;
     font-weight: bold;
     fill: #2a2a72;
-}
-
-/* 📱 Mobile Responsiveness */
-@media (max-width: 768px) {
-    .skills-container {
-        padding: 30px;
-        max-width: 100%;
-    }
-
-    .skills-title {
-        font-size: 1.5rem;
-    }
-
+  }
+  
+  /* ===== RESPONSIVE ADJUSTMENTS ===== */
+  /* Tablet (768px) */
+  @media (max-width: 768px) {
     .skills-list {
-        gap: 15px;
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+      gap: 1rem;
     }
-
+  
     .skill-item {
-        width: 120px;
-        padding: 10px;
+      padding: 0.75rem;
     }
-
+  
     .circular-progress {
-        width: 100px;
-        height: 100px;
+      width: 80px;
+      height: 80px;
     }
-
-    .percentage-text {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  /* Small Mobile (480px) */
+  @media (max-width: 480px) {
     .skills-container {
-        padding: 20px;
+      padding: 1.5rem;
     }
-
+  
     .skills-title {
-        font-size: 1.3rem;
+      font-size: 1.75rem;
     }
-
+  
     .skills-list {
-        flex-direction: column;
-        align-items: center;
+      grid-template-columns: repeat(3, 1fr); /* Still 3 cards */
+      gap: 0.75rem;
     }
-
+  
     .skill-item {
-        width: 100px;
-        padding: 8px;
+      min-width: 0;
+      padding: 0.5rem;
+      font-size: 0.9rem;
     }
-
+  
     .circular-progress {
-        width: 80px;
-        height: 80px;
+      width: 70px;
+      height: 70px;
     }
-
+  
     .percentage-text {
-        font-size: 14px;
+      font-size: 0.85rem;
     }
-}
+  }
+  
+  /* Extra Small Mobile (360px) */
+  @media (max-width: 360px) {
+    .skills-list {
+      grid-template-columns: repeat(2, 1fr); /* Fallback to 2 cards if too cramped */
+    }
+  }

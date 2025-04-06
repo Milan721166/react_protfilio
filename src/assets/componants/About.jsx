@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import aboutData from "../../../public/api/about.json";
+import aboutData from "../../api/about.json";
 import "../css/About.css";
 
 const About = () => {

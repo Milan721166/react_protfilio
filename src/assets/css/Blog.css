@@ -1,0 +1,249 @@
+/* Blog.css - Final Mobile-First Solution */
+.blog-container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Base Typography */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 1.5rem 0;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #4299e1;
+}
+
+/* Publications Grid - Mobile First */
+.publications-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.publication-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.publication-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.publication-content {
+    padding: 1.25rem;
+}
+
+.publication-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+.publication-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.publication-description {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Achievements List - Mobile First */
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.achievement-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.achievement-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.achievement-content {
+    padding: 1.25rem;
+}
+
+.achievement-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+.achievement-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.achievement-description {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Shared Button Styles */
+.read-more-btn,
+.view-details-btn {
+    display: inline-flex;
+    align-items: center;
+    color: #4299e1;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+}
+
+.read-more-btn:hover,
+.view-details-btn:hover {
+    color: #3182ce;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+    stroke: currentColor;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .blog-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .publications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+
+    .achievements-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .achievement-item {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .achievement-image {
+        width: 250px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .publication-header,
+    .achievement-header {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    .publication-title,
+    .achievement-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1024px) {
+    .achievement-image {
+        width: 300px;
+    }
+}
+
+/* Error Handling for Images */
+.publication-image img,
+.achievement-image img {
+    background-color: #f0f0f0;
+}
+
+/* Print Styles */
+@media print {
+    .blog-container {
+        padding: 0;
+    }
+    
+    .publication-card,
+    .achievement-item {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #eee;
+        margin-bottom: 1rem;
+    }
+    
+    .read-more-btn,
+    .view-details-btn {
+        display: none;
+    }
+}

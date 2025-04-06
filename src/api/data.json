@@ -1,0 +1,15 @@
+{
+    "name": "Milan Sahoo",
+    "greeting": "Hello, It's Me",
+    "description": "I'm a Web Designer with expertise in creating and designing websites, Frontend, Backend, and much more.",
+   "roles": ["Full Stack Developer", "Web Designer", "AI Enthusiast", "Software Engineer","IOT Projrcts Learning"],
+
+    "image": "../images/image.png",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/",
+      "instagram": "https://www.instagram.com/milan_sahoo2005/",
+      "github": "https://github.com/Milan721166",
+      "linkedin": "https://www.linkedin.com/in/milan-sahoo-98a912312"
+    }
+  }
+  

@@ -1,32 +1,28 @@
-
 {
     "title": "About Me",
     "description": "I am Milan Sahoo, a Junior Software Developer passionate about creating impactful solutions using cutting-edge technologies. I am a student at Brainware University with expertise in full-stack development, AI, and IoT projects.",
-    "image":["../../images/pic.png","../../images/image.png"] ,
-   
+    "image": ["../../images/pic.png", "../../images/image.png"],
     "experience": [
-        
         {
             "company": "Spoken Tutorial (IIT Bombay)",
-            "role": "C , C++ , Python 3.4.3",
-            "duration": "Jan 2025 - Jan 2025 (06.01.2025)"
+            "role": "C, C++, Python 3.4.3",
+            "duration": "Jan 2025 (06.01.2025)" 
         },
         {
             "company": "CodSoft",
-            "role": "C++ Programming intern",
+            "role": "C++ Programming Intern",
             "duration": "Jan 2025 - Feb 2025"
         },
         {
-            "company": " AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
+            "company": "AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
             "role": "Intern",
             "duration": "Feb 2025 - Mar 2025"
         },
         {
-            "company": " AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
+            "company": "AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
             "role": "Research and Development Engineer",
             "duration": "May 2025 - Present"
         }
     ],
-    
-    "hobbies": ["Coding", "AI Research", "Robotics", "Web Development", "Tech Blogging","Drawing"]
+    "hobbies": ["Coding", "AI Research", "Robotics", "Web Development", "Tech Blogging", "Drawing"]
 }

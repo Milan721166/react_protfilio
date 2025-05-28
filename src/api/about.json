@@ -1,12 +1,12 @@
 {
     "title": "About Me",
     "description": "I am Milan Sahoo, a Junior Software Developer passionate about creating impactful solutions using cutting-edge technologies. I am a student at Brainware University with expertise in full-stack development, AI, and IoT projects.",
-    "image": ["../../images/pic.png", "../../images/image.png"],
+    "image": ["/images/pic.png", "/images/image.png"],
     "experience": [
         {
             "company": "Spoken Tutorial (IIT Bombay)",
             "role": "C, C++, Python 3.4.3",
-            "duration": "Jan 2025 (06.01.2025)" 
+            "duration": "Jan 2025 (6-week course)"
         },
         {
             "company": "CodSoft",

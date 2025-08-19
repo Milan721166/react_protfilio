@@ -40,6 +40,6 @@
         "description": "Flask-based Routine Management System that automatically generates conflict-free schedules while optimizing resources!",
         "tech": ["HTML", "CSS", "Flask", "MySQL"],
         "link": "https://github.com/Milan721166/SBH-TechXenex-"
-      },
+      }
   ]
   

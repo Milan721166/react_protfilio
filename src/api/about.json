@@ -8,11 +8,7 @@
             "role": "C, C++, Python 3.4.3",
             "duration": "Jan 2025 (6-week course)"
         },
-        {
-            "company": "CodSoft",
-            "role": "C++ Programming Intern",
-            "duration": "Jan 2025 - Feb 2025"
-        },
+        
         {
             "company": "AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
             "role": "Intern",
@@ -22,6 +18,11 @@
             "company": "AGNIRATH AEROSPACE AND DEFENCE RESEARCH PRIVATE LIMITED",
             "role": "Research and Development Engineer",
             "duration": "May 2025 - Present"
+        },
+        {
+            "company": "BackendCoder (Frontend Development)",
+            "role": "Frontend Development",
+            "duration": "July 2025 – September 2025"
         }
     ],
     "hobbies": ["Coding", "AI Research", "Robotics", "Web Development", "Tech Blogging", "Drawing"]

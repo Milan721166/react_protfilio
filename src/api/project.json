@@ -1,38 +1,45 @@
 [
     {
       "id": 1,
-      "title": "Currency Converter",
-      "description": "A dynamic web app that converts currencies in real-time using an API.",
-      "tech": ["HTML", "CSS", "JavaScript", "API"],
-      "link": "https://currency-conveter-wine.vercel.app/"
+      "title": "Govt Template (In Progress)",
+      "description": "",
+      "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
+      "link": "https://govt-templete.vercel.app/"
     },
     {
       "id": 2,
-      "title": "Login Tolet-Globle",
-      "description": "Responsive Login page for Tolet-Globe, a real estate platform.",
-      "tech": ["React", "Bootstreap", "CSS", "API", "git"],
-      "link": "https://to-let-globe-xi.vercel.app/"
+      "title": "Internship Management System",
+      "description": "A complete system for students to apply, with admin verification, internship management, automatic offer letter generation, and email integration.",
+      "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
+      "link": "https://internship-managment.vercel.app/"
     },
     {
       "id": 3,
-      "title": "Portfolio Website",
-      "description": "A personal portfolio website showcasing my projects and skills.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "link": "https://milanprotfiolio.vercel.app/"
+      "title": "FoodExpress – Online Food Ordering ",
+      "description": "Developed a platform with restaurant, user, and admin logins enabling food ordering, restaurant management, and order tracking.",
+      "tech": ["React.js", "Vite" , "Bootstrap","API", "git"],
+      "link": "https://food-express-8qpd.vercel.app/"
     },
     {
         "id": 4,
-        "title": "Shopping Homepage",
-        "description": "A Shopping homepage with a modern design and user-friendly interface.",
-        "tech": ["React", "CSS", "JavaScript","API","Bootstreap"],
-        "link": "https://shopping-web-gules-five.vercel.app/"
+        "title": "School ERP (In Progress)",
+        "description": "Comprehensive school management system with dynamic features for handling students, parents, and multi-school data management.",
+        "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
+        "link": "no"
       },
       {
           "id": 5,
-          "title": "X & 0 Game",
-          "description": "A X & 0 game with a simple and interactive design.",
-          "tech": ["HTML", "CSS", "JavaScript","API"],
-          "link": "https://voice-assitance.vercel.app/"
-        }
+          "title": "VoteSys ",
+          "description": "Secure online voting platform with real-time verification. ",
+          "tech": ["HTML", "CSS", "Flask", "MySQL"],
+          "link": "https://www.linkedin.com/posts/milansahooms_flask-fullstackdevelopment-votingsystem-activity-7306154620047761409-KYtX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-Db_oBOouy0ClXT_Ygh_SWURBdqqaGDAc"
+        },
+    {
+        "id": 6,
+        "title": "College Routine Management System with an Intelligent Auto-Scheduling Algorithm!",
+        "description": "Flask-based Routine Management System that automatically generates conflict-free schedules while optimizing resources!",
+        "tech": ["HTML", "CSS", "Flask", "MySQL"],
+        "link": "https://github.com/Milan721166/SBH-TechXenex-"
+      },
   ]
   

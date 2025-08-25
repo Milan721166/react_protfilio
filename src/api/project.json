@@ -4,14 +4,14 @@
       "title": "Govt Template (In Progress)",
       "description": "",
       "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
-      "link": "https://govt-templete.vercel.app/"
+      "link": "https://sikkimgpu.vercel.app/"
     },
     {
       "id": 2,
       "title": "Internship Management System",
       "description": "A complete system for students to apply, with admin verification, internship management, automatic offer letter generation, and email integration.",
-      "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
-      "link": "https://internship-managment.vercel.app/"
+      "tech": ["React.js", "Vite" , "Tailwind css","API", "git","Node.js","Express.js","MongoDB"],
+      "link": "https://internshipbackencoder.vercel.app/"
     },
     {
       "id": 3,

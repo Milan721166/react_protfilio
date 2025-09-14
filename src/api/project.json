@@ -1,41 +1,35 @@
 [
+    
     {
       "id": 1,
-      "title": "Govt Template (In Progress)",
-      "description": "",
-      "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
-      "link": "https://sikkimgpu.vercel.app/"
-    },
-    {
-      "id": 2,
       "title": "Internship Management System",
       "description": "A complete system for students to apply, with admin verification, internship management, automatic offer letter generation, and email integration.",
       "tech": ["React.js", "Vite" , "Tailwind css","API", "git","Node.js","Express.js","MongoDB"],
       "link": "https://internshipbackencoder.vercel.app/"
     },
     {
-      "id": 3,
+      "id": 2,
       "title": "FoodExpress – Online Food Ordering ",
       "description": "Developed a platform with restaurant, user, and admin logins enabling food ordering, restaurant management, and order tracking.",
       "tech": ["React.js", "Vite" , "Bootstrap","API", "git"],
       "link": "https://food-express-8qpd.vercel.app/"
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "School ERP (In Progress)",
         "description": "Comprehensive school management system with dynamic features for handling students, parents, and multi-school data management.",
         "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
         "link": "Not shared due to company confidentiality"
       },
       {
-          "id": 5,
+          "id": 4,
           "title": "VoteSys ",
           "description": "Secure online voting platform with real-time verification. ",
           "tech": ["HTML", "CSS", "Flask", "MySQL"],
           "link": "https://www.linkedin.com/posts/milansahooms_flask-fullstackdevelopment-votingsystem-activity-7306154620047761409-KYtX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-Db_oBOouy0ClXT_Ygh_SWURBdqqaGDAc"
         },
     {
-        "id": 6,
+        "id": 5,
         "title": "College Routine Management System with an Intelligent Auto-Scheduling Algorithm!",
         "description": "Flask-based Routine Management System that automatically generates conflict-free schedules while optimizing resources!",
         "tech": ["HTML", "CSS", "Flask", "MySQL"],

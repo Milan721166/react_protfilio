@@ -7,29 +7,46 @@
       "tech": ["React.js", "Vite" , "Tailwind css","API", "git","Node.js","Express.js","MongoDB"],
       "link": "https://internshipbackencoder.vercel.app/"
     },
+     {
+  "id": 2,
+  "title": "MSmedcare",
+  "description": "A healthcare management platform where Admins, Hospitals, and Users can interact. Features include hospital registration, ambulance management, patient addition by users, and automatic hospital bed allocation within 10 minutes.",
+  "tech": [
+    "React.js",
+    "Vite",
+    "Tailwind CSS",
+    "API",
+    "Git",
+    "Node.js",
+    "Express.js",
+    "MongoDB"
+  ],
+  "link": "https://msmedcare.vercel.app/"
+},
+
     {
-      "id": 2,
+      "id": 3,
       "title": "FoodExpress – Online Food Ordering ",
       "description": "Developed a platform with restaurant, user, and admin logins enabling food ordering, restaurant management, and order tracking.",
       "tech": ["React.js", "Vite" , "Bootstrap","API", "git"],
       "link": "https://food-express-8qpd.vercel.app/"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "School ERP (In Progress)",
         "description": "Comprehensive school management system with dynamic features for handling students, parents, and multi-school data management.",
         "tech": ["React.js", "Vite" , "Tailwind css","API", "git"],
         "link": "Not shared due to company confidentiality"
       },
       {
-          "id": 4,
+          "id": 5,
           "title": "VoteSys ",
           "description": "Secure online voting platform with real-time verification. ",
           "tech": ["HTML", "CSS", "Flask", "MySQL"],
           "link": "https://www.linkedin.com/posts/milansahooms_flask-fullstackdevelopment-votingsystem-activity-7306154620047761409-KYtX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE-Db_oBOouy0ClXT_Ygh_SWURBdqqaGDAc"
         },
     {
-        "id": 5,
+        "id": 6,
         "title": "College Routine Management System with an Intelligent Auto-Scheduling Algorithm!",
         "description": "Flask-based Routine Management System that automatically generates conflict-free schedules while optimizing resources!",
         "tech": ["HTML", "CSS", "Flask", "MySQL"],
